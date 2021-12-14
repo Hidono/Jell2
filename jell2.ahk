@@ -114,7 +114,7 @@ Return
 
 
 $;::Send {U+003A}
-$+;::Send {U+003B
+$+;::Send {U+003B}
 
 
 !x::ExitApp

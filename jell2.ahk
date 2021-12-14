@@ -110,4 +110,11 @@ Return
 !^F4:: DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
 
 
+!^h::run steam://rungameid/367520
+
+
+$;::Send {U+003A}
+$+;::Send {U+003B
+
+
 !x::ExitApp

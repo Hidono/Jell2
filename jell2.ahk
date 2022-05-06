@@ -19,31 +19,23 @@ if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!\S)"))
     ExitApp
 }
 
+msgBox, 4 , jell2 , JELP ,
+
+IfMsgBox Yes
+{
 run, https://youtu.be/ZMuHPpG7OwY
-
 run, https://upload.wikimedia.org/wikipedia/commons/0/01/Rattus_norvegicus_1.jpg ;brown rat
-
 run, https://en.wikipedia.org/wiki/Rat ;rat wikipedia
-
 run, https://upload.wikimedia.org/wikipedia/commons/b/b9/A_river_rat.jpg ;river rat
-
 run, https://en.wiktionary.org/wiki/rat ;rat wiktionary
-
 run, https://upload.wikimedia.org/wikipedia/en/6/62/Rat_in_a_suburban_Vancouver_driveway.jpg ;driveway rat
-
 run, https://chinesenewyear.net/zodiac/rat/ ;rat chinese zodiac
-
 run, http://pngimg.com/uploads/rat_mouse/rat_mouse_PNG23553.png
-
 run, https://en.wikipedia.org/wiki/Karni_Mata_Temple ;rat temple
-
 run, https://emojipedia.org/rat/ ;rat emoji
-
 run, http://ratbehavior.org/vomit.htm ;rats can't vomit
-
-
 run, http://static.boredpanda.com/blog/wp-content/uploads/2016/08/cute-kittens-67-57b32a998544a__605.jpg
-
+}
 
 #persistent
 coordmode, mouse, screen
@@ -102,8 +94,8 @@ h::j
 H::J
 
 
-o::ö
-O::Ö
+o::Send ö
++O::Send Ö
 
 ^r::
 send, {BS 4}
@@ -120,6 +112,9 @@ Return
 ::albania::{BS 1}ALBANIA
 
 ::sus::{BS 1}ඞ
+
+::potify::https://p{U+006F}tifysite.wixsite.c{U+006F}m/p{U+006F}tify
+::pötify::https://p{U+006F}tifysite.wixsite.c{U+006F}m/p{U+006F}tify
 
 
 !^F4:: DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
